@@ -1,7 +1,8 @@
 .resultNewYork, .resultVienna, .resultShanghai, .resultNewOrleans {
   display: none;
 }
- 
+
+
 /*Styling the question column*/
 
 .vacationQuestions {
@@ -40,9 +41,28 @@ h3 {
   align-items: center;
   padding-top: 100px;
   color: #948C75;
+  border-radius: 0 !important;
 }
 
-.resultImage {
-  max-width: 550px;
+.welcomeMessage {
+  padding-top: 120px;
+}
 
+/*.resultStyle {
+
+}*/
+
+img.resultStyle {
+  max-width: 100%;
+  padding-bottom: 20px;
+
+}
+
+h2.resultStyle {
+  font-size: 2.5em;
+  padding-bottom: 20px;
+}
+
+p.resultStyle {
+  font-size: 12pt;
 }

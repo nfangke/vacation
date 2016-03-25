@@ -3,7 +3,6 @@ $(document).ready(function() {
     event.preventDefault();
 
     var favoriteSeason = $("input:radio[name=favoriteSeason]:checked").val();
-    console.log(favoriteSeason);
     var money = $("input:radio[name=money]:checked").val();
     var activity = $("input:radio[name=activity]:checked").val();
     var ifChildren = $("input:radio[name=ifChildren]:checked").val();
@@ -28,19 +27,5 @@ $(document).ready(function() {
       $(".welcomeMessage").hide();
       $("html, body").animate({ scrollTop: 0 }, "slow");
     }
-    // } else if (favoriteSeason === "spring") {
-    //   $(".resultVienna").show();
-    //   $(".welcomeMessage").hide();
-    //   $("html, body").animate({ scrollTop: 0 }, "slow");
-    // } else {
-    //   $(".resultShanghai").show();
-    //   $(".welcomeMessage").hide();
-    //   $("html, body").animate({ scrollTop: 0 }, "slow");
-    // }
-
-
-
-
-
   });
 });

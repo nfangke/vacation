@@ -1,0 +1,36 @@
+.confirmationMessageA, .confirmationMessageB, .confirmationMessageC, .confirmationMessageD {
+  display:none;
+}
+
+/*Styling the Survey page and header*/
+.out {
+  background-color: #D9CEB2;
+}
+p.surveyStyle {
+  padding-bottom: 30px;
+}
+.surveyPage {
+  max-width: 60%;
+  padding-top: 40px;
+  background-color: #99B2B7;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 60px;
+}
+
+/*Styling the survey questions*/
+
+.form-group {
+  padding-bottom: 15px;
+  max-width: 60%;
+}
+
+
+.questions {
+  padding-bottom: 15px;
+}
+
+h4 {
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
