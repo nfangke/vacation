@@ -1,7 +1,7 @@
-.resultNewYork {
+.resultNewYork, .resultVienna, .resultShanghai, .resultNewOrleans {
   display: none;
 }
-
+ 
 /*Styling the question column*/
 
 .vacationQuestions {
