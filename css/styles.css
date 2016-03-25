@@ -1,0 +1,48 @@
+.resultNewYork {
+  display: none;
+}
+
+/*Styling the question column*/
+
+.vacationQuestions {
+  min-height: 1000px;
+  background-color: #99B2B7;
+  padding-left:25px;
+  padding-right:25px;
+  padding-top: 10px;
+}
+
+
+/*Styling the questions*/
+h3 {
+  padding-bottom: 30px;
+}
+
+.questionText {
+  font-weight: 500 lighter;
+  font-size: 1.25em;
+}
+
+
+.radioStyle {
+  padding-right: 10px;
+}
+
+.questions {
+  margin-bottom: 45px;
+}
+
+/*Styling the results and default message*/
+.vacationResults {
+  min-height: 1000px;
+  background-color: #D5DED9;
+  text-align: center;
+  align-items: center;
+  padding-top: 100px;
+  color: #948C75;
+}
+
+.resultImage {
+  max-width: 550px;
+
+}

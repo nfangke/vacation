@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Vacation Suggester</title>
+  </head>
+
+  <body>
+
+    <div class="container-fluid landingPage">
+      <div class="row">
+
+        <!-- FORM -->
+        <div class="col-sm-4 vacationQuestions">
+          <form>
+            <h3>Select one answer for each question below: </h3>
+
+            <!-- Question 1: Season -->
+            <div class="radio questions">
+              <p class="questionText">1. What is your favorite season?</p>
+
+              <label class="radioStyle">
+                <input type="radio" name="favoriteSeason" id="spring">Spring
+              </label>
+
+              <label class="radioStyle">
+                <input type="radio" name="favoriteSeason" id="summer">Summer
+              </label>
+
+              <label class="radioStyle">
+                <input type="radio" name="favoriteSeason" id="fall">Fall
+              </label>
+
+              <label class="radioStyle">
+                <input type="radio" name="favoriteSeason" id="winter">Winter
+              </label>
+            </div>
+
+            <!-- Question 2: Money -->
+            <p class="questionText">2. How much do you want to spend?</p>
+            <div class="radio questions">
+              <label>
+                <input type="radio" name="money" id="under1K" value="option1">Under $1000
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="money" id="over1K" value="option2">$1000 - $2000
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="money" id="over2K" value="option3">$2000 - $5000
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="money" id="over5K" value="option4">I don't have a limit
+              </label>
+            </div>
+
+            <!-- Question 3: Activities -->
+            <p class="questionText">3. What do you like to do on vacation?</p>
+            <div class="radio questions">
+              <label>
+                <input type="radio" name="activity" id="relax" value="option1">Relax on a beach
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="activity" id="explore" value="option2">Explore the local culture and cuisine
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="activity" id="party" value="option3">Party your face off
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="activity" id="allAbove" value="option4">All of the above
+              </label>
+            </div>
+
+            <!-- Question 4: Children -->
+            <div class="radio questions">
+              <p class="questionText">4. Are you bringing children?</p>
+
+              <label class="radioStyle">
+                <input type="radio" name="ifChildren" id="yes">Yes
+              </label>
+
+              <label class="radioStyle">
+                <input type="radio" name="ifChildren" id="no">No
+              </label>
+            </div>
+
+            <!-- Question 5: Potterverse -->
+            <p class="questionText">5. Which is your Hogwarts house?</p>
+            <div class="radio questions">
+              <label>
+                <input type="radio" name="potter" id="gryffindor" value="option1">Gryffindor
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="potter" id="potter" value="hufflepuff">Hufflepuff
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="activity" id="party" value="ravenclaw">Ravenclaw
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="activity" id="slytherin" value="option4">Slytherin
+              </label>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="btn btn-info btn-lg">SUBMIT</button>
+
+          </form>
+        </div> <!-- ends the vacaQuestions div -->
+
+
+        <!-- Default message and vacation results -->
+
+        <div class="col-sm-8 vacationResults jumbotron">
+
+          <div class="welcomeMessage">
+            <h2>Welcome to Vacation Suggester</h2>
+            <p>Answer the questions on the left for a recommendation on where to travel next. Bon voyage!</p>
+          </div><!-- ends the welcomeMessage div -->
+
+
+          <div class="resultNewYork">
+            <img src="img/newyork.jpg" class="resultImage" alt="The New York Skyline seen as from the Brooklyn Bridge"
+            <h3>You might enjoy New York</h3>
+            <p>Your answers indicate that New York would be a good fit for your next vacation.</p>
+          </div>
+
+
+
+        </div> <!-- ends the vacaResults div -->
+
+
+
+      </div> <!-- ends the row div -->
+    </div> <!-- ends the fluid landingPage div -->
+  </body>
+
+</html>
