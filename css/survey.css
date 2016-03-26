@@ -5,6 +5,7 @@
 /*Styling the Survey page and header*/
 .out {
   background-color: #D9CEB2;
+
 }
 p.surveyStyle {
   padding-bottom: 30px;
@@ -16,6 +17,7 @@ p.surveyStyle {
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 60px;
+  min-height: 1000px;
 }
 
 /*Styling the survey questions*/
@@ -33,4 +35,10 @@ p.surveyStyle {
 h4 {
   padding-top: 25px;
   padding-bottom: 20px;
+}
+
+/*Styling the personalized response*/
+
+.confirmationMessage {
+  min-height: 1000px;
 }

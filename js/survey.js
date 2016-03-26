@@ -4,21 +4,22 @@ var cCount=0;
 var dCount=0;
 
 var aIncrease = function() {
-aCount = aCount+1}
+aCount = aCount+1};
 
 var bIncrease = function() {
-bCount = bCount+1}
+bCount = bCount+1};
 
 var cIncrease = function() {
-cCount = cCount+1}
+cCount = cCount+1};
 
 var dIncrease = function() {
-dCount = dCount+1}
+dCount = dCount+1};
 
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
 
+    var firstName = $("input#userFirstName").val();
     var question1 = $("input:radio[name=question1]:checked").val();
     var question2 = $("input:radio[name=question2]:checked").val();
     var question3 = $("input:radio[name=question3]:checked").val();
@@ -32,6 +33,7 @@ $(document).ready(function() {
       cIncrease();
     } else if (question1 === "d") {
       dIncrease();
+    }
 
     if (question2 === "a") {
       aIncrease();
@@ -41,6 +43,7 @@ $(document).ready(function() {
       cIncrease();
     } else if (question2 === "d") {
       dIncrease();
+    }
 
     if (question3 === "a") {
       aIncrease();
@@ -50,6 +53,7 @@ $(document).ready(function() {
       cIncrease();
     } else if (question3 === "d") {
       dIncrease();
+    }
 
     if (question4 === "a") {
       aIncrease();
@@ -59,16 +63,23 @@ $(document).ready(function() {
       cIncrease();
     } else if (question4 === "d") {
       dIncrease();
+    }
 
-      console.log("aCount");
-
-    if (aCount <= 2) {
+    if (aCount >= 2) {
+      $("form").hide();
+      $(".firstNameResponse").text(firstName);
       $(".confirmationMessageA").show();
-    } else if (bCount <= 2) {
+    } else if (bCount >= 2) {
+      $("form").hide();
+      $(".firstNameResponse").text(firstName);
       $(".confirmationMessageB").show();
-    } else if (cCount <= 2) {
-      $(".confirmationMessageB").show();
-    } else if (dCount <= 2) {
+    } else if (cCount >= 2) {
+      $("form").hide();
+      $(".firstNameResponse").text(firstName);
+      $(".confirmationMessageC").show();
+    } else if (dCount >= 2) {
+      $("form").hide();
+      $(".firstNameResponse").text(firstName);
       $(".confirmationMessageD").show();
     }
 
