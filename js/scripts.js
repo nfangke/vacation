@@ -9,20 +9,24 @@ $(document).ready(function() {
     var potter = $("input:radio[name=potter]").val();
 
     if ((favoriteSeason === "fall") && (money === "over1K" || money === "over2K") && (activity === "explore") && (ifChildren === "no") && (potter != "hufflepuff")) {
+      $(".result").hide();
       $(".resultShanghai").show();
       $(".welcomeMessage").hide();
       $("html, body").animate({ scrollTop: 0 }, "slow");
     } else if ((money === "over5K") && (activity != "relax") && (ifChildren = "yes") && (potter != "slytherin")) {
+      $(".result").hide();
       $(".resultVienna").show();
       $(".welcomeMessage").hide();
       $("html, body").animate({ scrollTop: 0 }, "slow");
 
     } else if ((favoriteSeason === "spring" || favoriteSeason === "fall") && (money === "over2K") && (activity === "explore" || activity === "party") && (potter != "hufflepuff")) {
+      $(".result").hide();
       $(".resultNewYork").show();
       $(".welcomeMessage").hide();
       $("html, body").animate({ scrollTop: 0 }, "slow");
 
     } else {
+      $(".result").hide();
       $(".resultNewOrleans").show();
       $(".welcomeMessage").hide();
       $("html, body").animate({ scrollTop: 0 }, "slow");

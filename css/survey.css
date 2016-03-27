@@ -11,8 +11,10 @@ p.surveyStyle {
   padding-bottom: 30px;
 }
 .surveyPage {
+  margin-top: 80px;
+  margin-bottom: 80px;
   max-width: 60%;
-  padding-top: 40px;
+  padding-top: 20px;
   background-color: #99B2B7;
   padding-left: 60px;
   padding-right: 60px;
@@ -40,5 +42,6 @@ h4 {
 /*Styling the personalized response*/
 
 .confirmationMessage {
-  min-height: 1000px;
+  min-height: 200px;
+  margin-bottom: 80px;
 }
